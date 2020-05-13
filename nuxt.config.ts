@@ -1,4 +1,8 @@
-export default {
+import { Configuration } from '@nuxt/types'
+
+import { getRoutes } from './functions/getRoutes'
+
+const config: Configuration = {
   mode: 'universal',
   /*
    ** Headers of the page
@@ -56,6 +60,16 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(_config, _ctx) {}
+  },
+  /*
+   ** Generate page
+   */
+  generate: {
+    routes() {
+      return getRoutes()
+    }
   }
 }
+
+export default config
