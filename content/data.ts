@@ -5,11 +5,15 @@ import { season2011 } from './year/2011'
 import { season2012 } from './year/2012'
 import { season2013 } from './year/2013'
 import { season2014 } from './year/2014'
+import { season2015 } from './year/2015'
+import { season2016 } from './year/2016'
 
 export const data: Anime[] = [
   ...season2010,
   ...season2011,
   ...season2012,
   ...season2013,
-  ...season2014
+  ...season2014,
+  ...season2015,
+  ...season2016
 ]
