@@ -2,47 +2,59 @@ import { Anime } from '../../types'
 
 export const fall: Anime[] = [
   {
-    id: 15689,
+    id: 19703,
     reccomendation: 0
   },
   {
-    id: 15417,
+    id: 19369,
     reccomendation: 0
   },
   {
-    id: 15059,
-    reccomendation: 0
-  },
-  {
-    id: 14741,
-    reccomendation: 0
-  },
-  {
-    id: 14713,
+    id: 18679,
     reccomendation: 1
   },
   {
-    id: 14527,
+    id: 18497,
     reccomendation: 0
   },
   {
-    id: 14131,
+    id: 18677,
     reccomendation: 0
   },
   {
-    id: 13759,
+    id: 18277,
+    reccomendation: 2
+  },
+  {
+    id: 18247,
     reccomendation: 1
   },
   {
-    id: 13663,
+    id: 18153,
+    reccomendation: 2
+  },
+  {
+    id: 18115,
+    reccomendation: 0
+  },
+  {
+    id: 17895,
+    reccomendation: 0
+  },
+  {
+    id: 17549,
     reccomendation: 1
   },
   {
-    id: 13599,
-    reccomendation: 1
+    id: 17265,
+    reccomendation: 2
   },
   {
-    id: 13601,
+    id: 11763,
+    reccomendation: 0
+  },
+  {
+    id: 9479,
     reccomendation: 0
   }
 ]

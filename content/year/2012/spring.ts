@@ -1,6 +1,6 @@
 import { Anime } from '../../types'
 
-export const spring2012: Anime[] = [
+export const spring: Anime[] = [
   {
     id: 12883,
     reccomendation: 0

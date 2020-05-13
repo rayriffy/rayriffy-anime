@@ -1,31 +1,15 @@
 import { Anime } from './types'
 
-import { fall2010 } from './year/2010/fall'
-import { spring2010 } from './year/2010/spring'
-import { summer2010 } from './year/2010/summer'
-import { winter2010 } from './year/2010/winter'
-
-import { fall2011 } from './year/2011/fall'
-import { spring2011 } from './year/2011/spring'
-import { summer2011 } from './year/2011/summer'
-import { winter2011 } from './year/2011/winter'
-
-import { fall2012 } from './year/2012/fall'
-import { spring2012 } from './year/2012/spring'
-import { summer2012 } from './year/2012/summer'
-import { winter2012 } from './year/2012/winter'
+import { season2010 } from './year/2010'
+import { season2011 } from './year/2011'
+import { season2012 } from './year/2012'
+import { season2013 } from './year/2013'
+import { season2014 } from './year/2014'
 
 export const data: Anime[] = [
-  ...fall2010,
-  ...spring2010,
-  ...summer2010,
-  ...winter2010,
-  ...fall2011,
-  ...spring2011,
-  ...summer2011,
-  ...winter2011,
-  ...fall2012,
-  ...spring2012,
-  ...summer2012,
-  ...winter2012
+  ...season2010,
+  ...season2011,
+  ...season2012,
+  ...season2013,
+  ...season2014
 ]

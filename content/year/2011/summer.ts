@@ -1,6 +1,6 @@
 import { Anime } from '../../types'
 
-export const summer2011: Anime[] = [
+export const summer: Anime[] = [
   {
     id: 10611,
     reccomendation: 0

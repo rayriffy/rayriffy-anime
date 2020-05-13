@@ -2,35 +2,35 @@ import { Anime } from '../../types'
 
 export const spring: Anime[] = [
   {
-    id: 10507,
+    id: 16498,
     reccomendation: 0
   },
   {
-    id: 10499,
+    id: 16049,
     reccomendation: 1
   },
   {
-    id: 10165,
-    reccomendation: 1
-  },
-  {
-    id: 10155,
-    reccomendation: 0
-  },
-  {
-    id: 10080,
-    reccomendation: 1
-  },
-  {
-    id: 9989,
+    id: 15809,
     reccomendation: 2
   },
   {
-    id: 9712,
+    id: 15699,
     reccomendation: 0
   },
   {
-    id: 9253,
-    reccomendation: 0
+    id: 15583,
+    reccomendation: 1
+  },
+  {
+    id: 15225,
+    reccomendation: 2
+  },
+  {
+    id: 14813,
+    reccomendation: 1
+  },
+  {
+    id: 13659,
+    reccomendation: 2
   }
 ]
