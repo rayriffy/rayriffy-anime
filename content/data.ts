@@ -21,5 +21,5 @@ export const data: Anime[] = [
   ...season2016,
   ...season2017,
   ...season2018,
-  ...season2019
+  ...season2019,
 ]

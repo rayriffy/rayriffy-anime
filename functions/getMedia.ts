@@ -20,6 +20,12 @@ export interface Media {
       | 'NOVEL'
       | 'ONE_SHOT'
     bannerImage: string
+    coverImage: {
+      extraLarge: string
+      large: string
+      medium: string
+      color: string
+    }
     title: {
       romaji: string
       native: string
@@ -47,7 +53,7 @@ export interface Media {
   }
 }
 
-export const getQuery = async (id: number) => {
+export const getMedia = async (id: number) => {
   try {
     const query = `
       query ($id: Int) {
@@ -56,6 +62,12 @@ export const getQuery = async (id: number) => {
           type
           format
           bannerImage
+          coverImage {
+            extraLarge
+            large
+            medium
+            color
+          }
           title {
             romaji
             english
@@ -90,12 +102,12 @@ export const getQuery = async (id: number) => {
       {
         query,
         variables: {
-          id
-        }
+          id,
+        },
       }
     )
 
-    return res
+    return res.data.data.Media
   } catch (e) {
     return null
   }

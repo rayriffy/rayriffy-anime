@@ -4,6 +4,7 @@ import { getRoutes } from './functions/getRoutes'
 
 const config: Configuration = {
   mode: 'universal',
+  target: 'static',
   /*
    ** Headers of the page
    */
@@ -15,10 +16,10 @@ const config: Configuration = {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
    ** Customize the progress-bar color
@@ -38,7 +39,7 @@ const config: Configuration = {
   buildModules: [
     '@nuxt/typescript-build',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
   ],
   /*
    ** Nuxt.js modules
@@ -46,7 +47,7 @@ const config: Configuration = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
   ],
   /*
    ** Axios module configuration
@@ -60,16 +61,14 @@ const config: Configuration = {
     /*
      ** You can extend webpack config here
      */
-    extend(_config, _ctx) {}
+    extend(_config, _ctx) {},
   },
   /*
    ** Generate page
    */
   generate: {
-    routes() {
-      return getRoutes()
-    }
-  }
+    routes: () => getRoutes(),
+  },
 }
 
 export default config
